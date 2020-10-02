@@ -1,4 +1,5 @@
 # Forking
+In order to push, you will need to fork this into your github account for write permission.
 When you fork this, you will need to change `"url": "https://github.com/fuqu-io/play"` to point at your repo.
 
 # play
