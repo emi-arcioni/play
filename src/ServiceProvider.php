@@ -37,6 +37,8 @@ class ServiceProvider extends BaseServiceProvider{
 	 * @internal
 	 */
 	private function bootConfig(){
+		require __DIR__ . '/routes.php';
+
 		$this->publishes([__DIR__ . '/../config/main.php' => config_path(SELF::SHORT_NAME . '-client-site.php')], 'config');
 		$this->mergeConfigFrom(__DIR__ . '/../config/main.php', SELF::SHORT_NAME);
 	}
